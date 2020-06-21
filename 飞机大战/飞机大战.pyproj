@@ -1,0 +1,111 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>c7174f9c-2b8b-4943-bc46-503aebef33b7</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>飞机大战.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>飞机大战</Name>
+    <RootNamespace>飞机大战</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="pygame入门.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="update方法的作用.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="事件监听.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="使用rect描述英雄.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="创建游戏窗口.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="绘制图像.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="绘制英雄图片.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="英雄的循环飞行.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="英雄的简单动画实现.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="认识游戏循环.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="飞机大战.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\again.png" />
+    <Content Include="images\background.png" />
+    <Content Include="images\bomb.png" />
+    <Content Include="images\bomb_supply.png" />
+    <Content Include="images\bullet1.png" />
+    <Content Include="images\bullet2.png" />
+    <Content Include="images\bullet_supply.png" />
+    <Content Include="images\enemy1.png" />
+    <Content Include="images\enemy1_down1.png" />
+    <Content Include="images\enemy1_down2.png" />
+    <Content Include="images\enemy1_down3.png" />
+    <Content Include="images\enemy1_down4.png" />
+    <Content Include="images\enemy2.png" />
+    <Content Include="images\enemy2_down1.png" />
+    <Content Include="images\enemy2_down2.png" />
+    <Content Include="images\enemy2_down3.png" />
+    <Content Include="images\enemy2_down4.png" />
+    <Content Include="images\enemy2_hit.png" />
+    <Content Include="images\enemy3_down1.png" />
+    <Content Include="images\enemy3_down2.png" />
+    <Content Include="images\enemy3_down3.png" />
+    <Content Include="images\enemy3_down4.png" />
+    <Content Include="images\enemy3_down5.png" />
+    <Content Include="images\enemy3_down6.png" />
+    <Content Include="images\enemy3_hit.png" />
+    <Content Include="images\enemy3_n1.png" />
+    <Content Include="images\enemy3_n2.png" />
+    <Content Include="images\gameover.png" />
+    <Content Include="images\life.png" />
+    <Content Include="images\me1.png" />
+    <Content Include="images\me2.png" />
+    <Content Include="images\me_destroy_1.png" />
+    <Content Include="images\me_destroy_2.png" />
+    <Content Include="images\me_destroy_3.png" />
+    <Content Include="images\me_destroy_4.png" />
+    <Content Include="images\pause_nor.png" />
+    <Content Include="images\pause_pressed.png" />
+    <Content Include="images\resume_nor.png" />
+    <Content Include="images\resume_pressed.png" />
+    <Content Include="在游戏循环中监听事件.txt" />
+    <Content Include="游戏循环.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
